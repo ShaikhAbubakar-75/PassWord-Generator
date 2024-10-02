@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --primary-color: #EEE8F6;
+  --secondary-color: #FFFFFF;
+  --accent-color: #8697C3;
+}
+body {
+  background-color: var(--secondary-color);
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+.copy-text {
+  color: green;
+}
+.container {
+  box-shadow: 10px 10px 0px 5px;
+}
+.header {
+  background-color: var(--primary-color);
+  padding: 1em;
+  width: 450px;
+}
+.display {
+  width: 450px;
+  position: relative;
+}
+#text-field {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+#copy-btn {
+  position: absolute;
+  right: 0;
+  padding: 4px 8px;
+  margin: 8px;
+  border: none;
+  background-color: var(--accent-color);
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.setting {
+  font-weight: 400;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+#length-input {
+  border: none;
+  width: 30px;
+  text-align: center;
+  outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#gn-btn {
+  background-color: white;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+  padding: 8px 0px;
+  cursor: pointer;
+}

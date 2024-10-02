@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="./lock.svg" type="image/x-icon">
+
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <main draggable="true">
+        <p class="copy-text"></p>
+        <div class="container">
+            <div class="header">
+                <h2>Password Generate</h2>
+            </div>
+            <div class="display">
+                <input type="text" id="text-field" placeholder="password">
+                <button id="copy-btn">Copy</button>
+            </div>
+            <div class="setting">
+                <label for="length-input">Length</label>
+                <input type="number" name="number" id="length-input" value="10" max="20" min="5" step="1">
+            </div>
+            <div class="setting">
+                <label for="uppercase">Uppercase</label>
+                <input type="checkbox" name="uppercase" id="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">Lowercase</label>
+                <input type="checkbox" name="lowercase" id="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label for="number">Number</label>
+                <input type="checkbox" name="number" id="number" checked>
+            </div>
+            <div class="setting">
+                <label for="symbol">Symbol</label>
+                <input type="checkbox" name="symbol" id="symbol" checked>
+            </div>
+            <div class="generate-btn">
+                <button id="gn-btn" title="Click to generate">Generate</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
